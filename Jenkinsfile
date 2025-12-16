@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Test') { 
             steps {
-            echo "stage-2"
+            sh 'python3 demo.py' 
             }
         }
         stage('Deploy') { 
             steps {
-                echo "stage-3"
+                sh 'python3 demo1.py' 
             }
         }
     }
